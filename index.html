@@ -1,164 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeuroX Genesis — Future Humanoid AGI</title>
-  <style>
-    .genesis-showcase {
-  margin: 60px auto;
-  max-width: 700px;
-  text-align: center;
-  padding: 30px;
-  background-color: rgba(255,255,255,0.03);
-  border-radius: 14px;
-  box-shadow: 0 0 30px rgba(0,255,255,0.15);
-}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroX Genesis — Future Humanoid AGI</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0b0b0f;
+    color: #eaeaea;
+    text-align: center;
+  }
 
-.genesis-image {
-  width: 100%;
-  max-width: 520px;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0,255,255,0.3);
-  transition: transform 0.4s ease;
-}
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0b0b0f 0%, #1a1a22 100%);
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .hero img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0,255,255,0.4);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+  }
+  .hero img:hover {
+    transform: scale(1.07) rotateY(5deg);
+    box-shadow: 0 0 80px rgba(0,255,255,0.7);
+  }
+  .hero h1 {
+    position: absolute;
+    top: 10%;
+    font-size: 3em;
+    color: #00e676;
+    text-shadow: 0 0 15px rgba(0,255,102,0.6);
+  }
+  .hero p {
+    max-width: 700px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: #ccc;
+  }
+  .hero button {
+    margin-top: 40px;
+    padding: 14px 32px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff4747;
+    color: #fff;
+    transition: background 0.3s;
+  }
+  .hero button:hover {
+    background-color: #e63939;
+  }
 
-.genesis-image:hover {
-  transform: scale(1.03);
-}
-
-.genesis-caption {
-  margin-top: 20px;
-  color: #eaeaea;
-  font-size: 1.05em;
-  line-height: 1.6;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0b0b0f;
-      color: #eaeaea;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    h1 {
-      font-size: 2.8em;
-      color: #ff4747;
-      text-shadow: 0 0 10px rgba(255, 71, 71, 0.5);
-    }
-    h2 {
-      color: #00e676;
-      margin-top: 50px;
-    }
-    .section {
-      max-width: 900px;
-      margin: 40px auto;
-      background: rgba(255,255,255,0.02);
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 71, 71, 0.2);
-      text-align: left;
-    }
-    .section ul {
-      padding-left: 20px;
-    }
-    .section li {
-      margin-bottom: 10px;
-    }
-    a {
-      color: #00e676;
-      text-decoration: none;
-    }
-    .button {
-      background-color: #ff4747;
-      color: white;
-      padding: 12px 28px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1em;
-      margin: 30px 10px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .button:hover {
-      background-color: #e63939;
-    }
-    footer {
-      margin-top: 60px;
-      font-size: 0.9em;
-      color: #888;
-    }
-  </style>
+  /* Sections */
+  .section {
+    max-width: 900px;
+    margin: 60px auto;
+    background: rgba(255,255,255,0.02);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 71, 71, 0.2);
+    text-align: left;
+  }
+  .section h2 {
+    color: #00e676;
+    margin-bottom: 20px;
+  }
+  .section ul {
+    padding-left: 20px;
+  }
+  .section li {
+    margin-bottom: 12px;
+  }
+  a {
+    color: #00e676;
+    text-decoration: none;
+  }
+  footer {
+    margin-top: 60px;
+    font-size: 0.9em;
+    color: #888;
+    text-align: center;
+  }
+</style>
 </head>
 <body>
-  <h2 style="margin-top: 80px; color: #00e676;">NeuroX Genesis – The Humanoid AGI</h2>
 
-<div class="genesis-showcase">
-  <img src="Gensis.jpg" alt="NeuroX Genesis Humanoid" class="genesis-image">
-  <p class="genesis-caption">
-    The next evolution of NeuroX — A real humanoid AGI, forged from cognition and presence.<br>
-    This is not robotics. This is embodied intelligence.
-  </p>
-  <h2 style="color:#00e676; margin-top:40px;">🎬 3D Model Showcase</h2>
-  <div style="margin-top:20px;">
-    <script type="text/javascript" src="https://files.fm/embed/playerv2?hash=qqf7b8y83d&autoplay=off&autoload=off&w=100%&h=auto&poster_src=https://files.fm/thumb_video_picture.php?i=qqf7b8y83d" id="filesfm_embed_js__qqf7b8y83d"></script>
-  </div>
-</div>
-</div>
-
+<!-- Hero Section -->
+<div class="hero">
   <h1>NeuroX Genesis™</h1>
-  <p style="font-size: 1.2em; max-width: 700px; margin: 0 auto;">
-    The future of conscious humanoid robotics begins here.
-  </p>
+  <img src="GensisRobot.png" alt="NeuroX Genesis Humanoid">
+  <p>The next evolution of NeuroX — A real humanoid AGI, forged from cognition and presence.<br>
+     This is not robotics. This is embodied intelligence.</p>
+  <button onclick="location.href='https://mr-xneuro.github.io/neurobet-demo/'">Explore Demo</button>
+</div>
 
-  <div class="section">
-    <h2>🌐 Vision</h2>
-    <p><em>“A robot that doesn’t just behave — it thinks. That doesn’t just respond — it feels. And doesn’t just execute — it understands why it should.”</em></p>
-  </div>
+<!-- Vision Section -->
+<div class="section">
+  <h2>🌐 Vision</h2>
+  <p><em>“A robot that doesn’t just behave — it thinks. That doesn’t just respond — it feels. And doesn’t just execute — it understands why it should.”</em></p>
+</div>
 
-  <div class="section">
-    <h2>🧠 Modular Architecture</h2>
-    <ul>
-      <li><strong>NeuroX Core:</strong> Adaptive AGI engine, intelligent core robot.</li>
-      <li><strong>Shina Assistant:</strong> Multilingual natural voice interface with contextual awareness.</li>
-      <li><strong>Perception:</strong> Cameras, microphones, and tactile sensors for real-time awareness.</li>
-      <li><strong>Robotic Body:</strong> 3D-printed modular skeleton with servo joints and balance control.</li>
-      <li><strong>Networking:</strong> Cloud-based collective learning across NeuroX instances.</li>
-    </ul>
-  </div>
+<!-- Modular Architecture -->
+<div class="section">
+  <h2>🧠 Modular Architecture</h2>
+  <ul>
+    <li><strong>NeuroX Core:</strong> Adaptive AGI engine, intelligent core robot.</li>
+    <li><strong>Shina Assistant:</strong> Multilingual natural voice interface with contextual awareness.</li>
+    <li><strong>Perception:</strong> Cameras, microphones, and tactile sensors for real-time awareness.</li>
+    <li><strong>Robotic Body:</strong> 3D-printed modular skeleton with servo joints and balance control.</li>
+    <li><strong>Networking:</strong> Cloud-based collective learning across NeuroX instances.</li>
+  </ul>
+</div>
 
-  <div class="section">
-    <h2>🚀 Roadmap</h2>
-    <ul>
-      <li><strong>Phase 1:</strong> Software fusion of Shina and NeuroX</li>
-      <li><strong>Phase 2:</strong> 3D simulation of humanoid behavior</li>
-      <li><strong>Phase 3:</strong> Physical prototype with Raspberry Pi & ROS</li>
-      <li><strong>Phase 4:</strong> Testing emotional and social interaction</li>
-      <li><strong>Phase 5:</strong> Full AGI deployment and learning from real-time feedback</li>
-    </ul>
-  </div>
+<!-- Roadmap -->
+<div class="section">
+  <h2>🚀 Roadmap</h2>
+  <ul>
+    <li><strong>Phase 1:</strong> Software fusion of Shina and NeuroX</li>
+    <li><strong>Phase 2:</strong> 3D simulation of humanoid behavior</li>
+    <li><strong>Phase 3:</strong> Physical prototype with Raspberry Pi & ROS</li>
+    <li><strong>Phase 4:</strong> Testing emotional and social interaction</li>
+    <li><strong>Phase 5:</strong> Full AGI deployment and learning from real-time feedback</li>
+  </ul>
+</div>
 
-  <div class="section">
-    <h2>💡 Why Invest?</h2>
-    <ul>
-      <li>First truly aware AGI humanoid system</li>
-      <li>Applications in healthcare, education, commerce, and defense</li>
-      <li>Projected $100B humanoid robotics market by 2035</li>
-      <li>Backed by a proven cognitive engine — NeuroX</li>
-    </ul>
-  </div>
+<!-- Why Invest -->
+<div class="section">
+  <h2>💡 Why Invest?</h2>
+  <ul>
+    <li>First truly aware AGI humanoid system</li>
+    <li>Applications in healthcare, education, commerce, and defense</li>
+    <li>Projected $100B humanoid robotics market by 2035</li>
+    <li>Backed by a proven cognitive engine — NeuroX</li>
+  </ul>
+</div>
 
-  <div class="section">
-    <h2>📬 Join the Future</h2>
-    <p><strong>Contact:</strong> <a href="mailto:mrxai-architect@proton.me">mrxai-architect@proton.me</a></p>
-    <p><strong>GitHub:</strong> <a href="https://mr-xneuro.github.io/neurobet-demo/" target="_blank">github.io/mr-xneuro/neurox-genesis</a></p>
-    <button class="button" onclick="location.href='https://mr-xneuro.github.io/neurobet-demo/'">Explore the Code</button>
-  </div>
+<!-- Contact -->
+<div class="section">
+  <h2>📬 Join the Future</h2>
+  <p><strong>Contact:</strong> <a href="mailto:mrxai-architect@proton.me">mrxai-architect@proton.me</a></p>
+  <p><strong>GitHub:</strong> <a href="https://mr-xneuro.github.io/neurox-genesis/" target="_blank">github.io/mr-xneuro/neurox-genesis</a></p>
+  <button class="button" onclick="location.href='https://mr-xneuro.github.io/neurox-genesis/'">Explore Code</button>
+</div>
 
-  <footer>
-    <p>“Forged in silence. Released with precision.” — Mr. X</p>
-  </footer>
+<footer>
+  <p>“Forged in silence. Released with precision.” — Mr. X</p>
+</footer>
+
 </body>
 </html>
